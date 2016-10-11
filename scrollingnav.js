@@ -37,7 +37,5 @@ scrollyBitContainer.appendChild(btnScrollRight);
 
 scrollyBit.addEventListener("scroll", function () {
 
-  console.log(scrollyBit.scrollLeft, scrollyBit.scrollWidth, scrollyBitContainer.clientWidth, scrollyBit.scrollWidth - scrollyBitContainer.clientWidth);
-
   btnScrollRight.disabled = scrollyBit.scrollLeft >= scrollyBit.scrollWidth - scrollyBitContainer.clientWidth;
 });

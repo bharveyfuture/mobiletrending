@@ -1404,6 +1404,15 @@ window.addEventListener('load', cb);
 }
 </script><!-- document-footer GenTime Mon, 10 Oct 2016 14:16:56 +0000| Host: marlonia -->
 
+<script>
+var a = document.getElementsByTagName('A');
+var i;
+for (i = 0; i < a.length; i += 1) {
+  a[i].addEventListener("click", function (event) {
+    event.preventDefault();
+  });
+}
+</script>
 
 <script src="scrollingnav.js"></script>
 
